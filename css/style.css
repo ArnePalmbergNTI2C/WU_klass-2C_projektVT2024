@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+/*taggar*/
+
+
+
+/* header */
+
 header {
 
     grid-area: head;
@@ -14,6 +20,12 @@ header {
     grid-template-areas: 
     "logo meny"
     ;
+    box-shadow: 0px 1px 5px grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 
 }
 
@@ -29,7 +41,6 @@ header {
 #meny {
 
     grid-area: meny;
-    background: #ffe186;
     display: flex;
     align-items: center;
 }
@@ -60,10 +71,31 @@ header {
 
 }
 
+/*footer*/
+
+footer {
+
+    grid-area: foot;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+#p_footer {
+
+    font-size: 3rem;
+
+}
+
+/*sida 1*/
+
 body {
 
     display: grid;
-    grid-template-rows: 100px 500px 500px 500px 500px 500px 100px;
+    grid-template-rows: 100px 600px 600px 600px 600px 600px 100px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "head head"
@@ -81,8 +113,26 @@ body {
 
     display: flex;
     justify-content: center;
-    align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.section_class_text {
+
+    flex-direction: column;
+    padding: 250px;
+
+}
+
+.rubrik_startsida {
+
+
+    
+}
+
+.text {
+
+    padding-bottom: 30px;
 
 }
 
@@ -92,17 +142,15 @@ body {
 
 }
 
-
 #sec2 {
 
     grid-area: sec2;
-    overflow: hidden;
 
 }
 
 #bild1 {
 
-    height: auto;
+    height: 100%;
     width: 100%;
 
 }
@@ -110,15 +158,13 @@ body {
 #sec3 {
 
     grid-area: sec3;
-    overflow: hidden;
 
 }
 
 #bild2 {
 
-    height: auto;
+    height: 100%;
     width: 100%;
-
 
 }
 
@@ -140,9 +186,23 @@ body {
 
 }
 
+#bild3 {
+
+    height: 100%;
+    width: 100%;
+
+}
+
 #sec7 {
 
     grid-area: sec7;
+
+}
+
+#bild4 {
+
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -164,12 +224,13 @@ body {
 
 }
 
-#foot {
+#bild5 {
 
-    grid-area: foot;
-    background: blue;
+    height: 100%;
+    width: 100%;
 
 }
+
 
 @media screen and (max-width: 800px) {
     
