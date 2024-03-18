@@ -48,6 +48,12 @@ header {
     grid-template-areas: 
     "logo meny"
     ;
+    box-shadow: 0px 1px 5px grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 
     box-shadow: 0px 1px 5px grey;
     position: fixed;
@@ -255,16 +261,18 @@ footer {
 
 }
 
+
 #bild4_1 {
+}
+
+#bild4 {
 
     height: 100%;
     width: 100%;
 
 }
 
-#sec8_1 {
-
-    grid-area: sec8_1;
+#sec8 {
 
 }
 
