@@ -1,13 +1,41 @@
 * {
 
     padding: 0;
-    margin: 0;
+    margin:0;
     box-sizing: border-box;
 }
 
 /*taggar*/
 
+p {
 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h1 {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h2 {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+h3 {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+a {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
 
 /* header */
 
@@ -27,15 +55,27 @@ header {
     width: 100%;
 
 
+    box-shadow: 0px 1px 5px grey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../img/white.jpg');
+
+}
+
+#logga_sec {
+
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+
 }
 
 #loggan {
 
-    height: 100%;
-    width: 100%;
+    height: 90px;
     grid-area: logo;
-
-
 }
 
 #meny {
@@ -43,6 +83,7 @@ header {
     grid-area: meny;
     display: flex;
     align-items: center;
+
 }
 
 
@@ -76,11 +117,11 @@ header {
 footer {
 
     grid-area: foot;
-    background: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    background: gray;
 
 }
 
@@ -92,149 +133,279 @@ footer {
 
 /*sida 1*/
 
-body {
+#body_1 {
 
     display: grid;
-    grid-template-rows: 100px 600px 600px 600px 600px 600px 100px;
+    grid-template-rows:100px 600px 600px 600px 600px 600px 100px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "head head"
-    "sec1 sec2"
-    "sec3 sec4"
-    "sec5 sec6"
-    "sec7 sec8"
-    "sec9 sec10"
+    grid-template-areas:
+    "head head" 
+    "sec1_1 sec2_1"
+    "sec3_1 sec4_1"
+    "sec5_1 sec6_1"
+    "sec7_1 sec8_1"
+    "sec9_1 sec10_1"
     "foot foot"
     ;
 
 }
 
-.section_class {
+.section_class_1 {
 
     display: flex;
     justify-content: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
-.section_class_text {
+.section_class_text_1 {
 
     flex-direction: column;
-    padding: 250px;
+    padding: 150px;
 
 }
 
-.rubrik_startsida {
+.rubriker_1 {
 
 
     
 }
 
-.text {
+.text_1 {
 
     padding-bottom: 30px;
 
 }
 
-#sec1 {
 
-    grid-area: sec1;
+.pil_1 {
 
-}
-
-#sec2 {
-
-    grid-area: sec2;
+    width: 50px;
 
 }
 
-#bild1 {
+.read_more_a_1 {
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.read_more_p_1 {
+
+    padding-left: 10px;
+    font-size: 1.3rem;
+
+}
+
+#sec1_1 {
+
+    grid-area: sec1_1;
+
+}
+
+#sec2_1 {
+
+    grid-area: sec2_1;
+
+}
+
+#bild1_1 {
 
     height: 100%;
     width: 100%;
 
 }
 
-#sec3 {
+#sec3_1 {
 
-    grid-area: sec3;
+    grid-area: sec3_1;
 
 }
 
-#bild2 {
+#bild2_1 {
 
     height: 100%;
     width: 100%;
 
 }
 
-#sec4 {
+#sec4_1 {
 
-    grid-area: sec4;
-
-}
-
-#sec5 {
-
-    grid-area: sec5;
+    grid-area: sec4_1;
 
 }
 
-#sec6 {
+#sec5_1 {
 
-    grid-area: sec6;
+    grid-area: sec5_1;
 
 }
 
-#bild3 {
+#sec6_1 {
+
+    grid-area: sec6_1;
+
+}
+
+#bild3_1 {
 
     height: 100%;
     width: 100%;
 
 }
 
-#sec7 {
+#sec7_1 {
 
-    grid-area: sec7;
+    grid-area: sec7_1;
 
 }
 
-#bild4 {
+#bild4_1 {
 
     height: 100%;
     width: 100%;
 
 }
 
-#sec8 {
+#sec8_1 {
 
-    grid-area: sec8;
-
-}
-
-#sec9 {
-
-    grid-area: sec9;
+    grid-area: sec8_1;
 
 }
 
-#sec10 {
+#sec9_1 {
 
-    grid-area: sec10;
+    grid-area: sec9_1;
 
 }
 
-#bild5 {
+#sec10_1 {
+
+    grid-area: sec10_1;
+
+}
+
+#bild5_1 {
 
     height: 100%;
     width: 100%;
 
 }
 
+/*sida 2*/
+
+#body_2 {
+
+    display: grid;
+    grid-template-rows: 100px 300px 600px 600px 600px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "head head" 
+    "sec1_2 sec1_2"
+    "sec1_2_2 sec2_2"
+    "sec3_2 sec4_2"
+    "sec5_2 sec6_2"
+    "foot foot"
+    ;
+
+}
+
+#sec1_2 {
+
+    grid-area: sec1_2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    background: gray;
+
+
+
+}
+
+#sec1_2_2 {
+
+    grid-area: sec1_2_2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+#sec2_2 {
+
+    grid-area: sec2_2;
+
+
+}
+
+#bilder_2 {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+#sec3_2 {
+
+    grid-area: sec3_2;
+
+}
+
+#bild_map {
+
+    height: 100%;
+    width: 100%;  
+
+}
+
+#sec4_2 {
+
+    grid-area: sec4_2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+#sec5_2 {
+
+    grid-area: sec5_2;
+
+}
+
+#sec6_2 {
+
+    grid-area: sec6_2;
+
+}
+
+
+
+
+/*sida 3*/
+
+
+
+/*telefon*/
 
 @media screen and (max-width: 800px) {
     
-    body{
+    header {
+
+        grid-template-areas: 
+        "logo meny"
+        ;
+    
+    }
+
+    #body_1{
         grid-template-rows: 100px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 100px;
         grid-template-areas: 
             "head head"
@@ -253,28 +424,4 @@ body {
         ;
     }
 
-    header {
-
-        grid-template-areas: 
-        "logo meny"
-        ;
-    
-    }
-
-    #bild1 {
-
-        height: 100%;
-        width: auto;
-    
-    
-    }
-
-    #bild2 {
-
-        height: 100%;
-        width: auto;
-    
-    
-    }
-  
 }
