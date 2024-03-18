@@ -68,13 +68,13 @@ header {
 
     display: flex;
     align-items: center;
-    padding-left: 5px;
+    padding-left: 30px;
 
 }
 
 #loggan {
 
-    height: 90px;
+    height: 80px;
     grid-area: logo;
 }
 
@@ -162,12 +162,6 @@ footer {
     flex-direction: column;
     padding: 150px;
 
-}
-
-.rubriker_1 {
-
-
-    
 }
 
 .text_1 {
@@ -261,11 +255,7 @@ footer {
 
 }
 
-
 #bild4_1 {
-}
-
-#bild4 {
 
     height: 100%;
     width: 100%;
@@ -273,6 +263,8 @@ footer {
 }
 
 #sec8_1 {
+
+    grid-area: sec8_1;
 
 }
 
@@ -313,6 +305,13 @@ footer {
 
 }
 
+.text_2 {
+
+    padding-bottom: 30px;
+
+}
+
+
 #sec1_2 {
 
     grid-area: sec1_2;
@@ -323,15 +322,13 @@ footer {
     padding-right: 200px;
     background: gray;
 
-
-
 }
 
 #sec1_2_2 {
 
     grid-area: sec1_2_2;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     padding-left: 150px;
     padding-right: 150px;
@@ -341,15 +338,26 @@ footer {
 #sec2_2 {
 
     grid-area: sec2_2;
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#bilder_2 {
+.arrow_bildspel {
+    width: 75px;
+    height: auto;
+    margin: 15px;
+} 
 
-    height: 100%;
-    width: 100%;
+#bildspel_bilderna {
+    width: auto;
+    height: 600px;
+    border-radius: 30px;
+}
 
+#bildspel_inre_sec {
+    display: flex;
+    align-items: center;
 }
 
 #sec3_2 {
