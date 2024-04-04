@@ -1,4 +1,4 @@
-// hamburgermeny
+// meny
 const burger = document.getElementById('burger')
 const linkList = document.getElementById('ul_header')
 

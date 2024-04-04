@@ -49,6 +49,8 @@ a {
 
 header {
 
+    z-index: 1;
+
     grid-area: head;
     display: grid;
     grid-template-rows: 100px;
@@ -196,6 +198,36 @@ footer {
 
 }
 
+.pil_2 {
+
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+}
+
+.pil_sec:hover .pil_2{
+
+    opacity: 1;
+    color: brown;
+
+}
+
+.pil_sec:hover a{
+
+    color: brown;
+
+}
+
+.pil_sec {
+
+    position: relative;
+}
+
+
 .read_more_a_1 {
 
     display: flex;
@@ -208,6 +240,7 @@ footer {
 
     padding-left: 10px;
     font-size: 1.3rem;
+    transition: all 0.5s ease;
 
 }
 
@@ -215,6 +248,7 @@ footer {
 
     width: auto;
     height: auto;
+    
 }
 
 #sec1_1 {
@@ -507,7 +541,7 @@ footer {
 
     #body_2 {
 
-        grid-template-rows: 100px 300px 600px 500px 300px 300px 500px 500px 100px;
+        grid-template-rows: 100px 300px 600px 500px 400px 300px 500px 500px 100px;
         grid-template-areas:
         "head head" 
         "sec1_2 sec1_2"
@@ -551,6 +585,13 @@ footer {
         width: auto;
         height: 300px;
         border-radius: 30px;
+    }
+
+    #bildmap {
+
+        width: auto;
+
+
     }
 
 
