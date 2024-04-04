@@ -1,46 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
 
     padding: 0;
     margin:0;
     box-sizing: border-box;
 
+    --font-family: "Montserrat", sans-serif;
+
     --burgerline_width: 30px;
     --burgerline_height: 6px;
     --burgerline_margin: 5px;
-    
-    --background_color: lightseagreen;
+
 }
 
 /*taggar*/
 
 p {
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-family);
 
 }
 
 h1 {
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-family);
 
 }
 
 h2 {
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-family);
 
 }
 
 h3 {
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    font-family: var(--font-family);
+    
 }
 
 a {
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-family: var(--font-family);
+
 }
 
 /* header */
@@ -54,13 +56,6 @@ header {
     grid-template-areas: 
     "logo meny"
     ;
-    box-shadow: 0px 1px 5px grey;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-
     box-shadow: 0px 1px 5px grey;
     position: fixed;
     top: 0;
@@ -86,35 +81,13 @@ header {
 
 #meny {
 
+    height: 100px;
+    width: 100%;
     grid-area: meny;
     display: flex;
     align-items: center;
 
 }
-
-#link_list {
-    flex-direction: row;
-    height: 100px;
-    width: 100%;
-    top: 0px;
-    border-bottom: 2px solid grey;
-}
-
-.links_visible {
-    transform: translateY(0px);
-}
-
-#link_list a:hover {
-    background: var(--background_color);
-    color: rgb(255, 128, 0);
-}
-
-#link_list a {
-    color: black;
-    font-size: 1.5rem;
-}
-
-
 
 #ul_header {
 
@@ -122,8 +95,28 @@ header {
     width: 100%;
     justify-content: space-around;
     list-style: none;
-
+    flex-direction: row;
+    top: 0px;
     
+}
+
+.links_visible {
+    transform: translateY(0px);
+}
+
+#ul_header a:hover {
+    color: brown;
+}
+
+#ul_header a {
+    color: black;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    width: 200px;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .a_header {
@@ -133,12 +126,6 @@ header {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
     font-size: 1.2rem;
     
-}
-
-.a_header:hover {
-
-    color: brown;
-
 }
 
 /*footer*/
@@ -165,7 +152,7 @@ footer {
 #body_1 {
 
     display: grid;
-    grid-template-rows:100px 600px 600px 600px 600px 600px 100px;
+    grid-template-rows: 100px 650px 600px 600px 600px 600px 100px;
     grid-template-columns: 1fr 1fr;
     width: auto;
     grid-template-areas:
@@ -190,7 +177,9 @@ footer {
 .section_class_text_1 {
 
     flex-direction: column;
-    padding: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+
 
 }
 
@@ -203,7 +192,7 @@ footer {
 
 .pil_1 {
 
-    width: 50px;
+    height: 50px;
 
 }
 
@@ -222,34 +211,30 @@ footer {
 
 }
 
+.bild_1 {
+
+    width: auto;
+    height: auto;
+}
+
 #sec1_1 {
 
     grid-area: sec1_1;
+
 
 }
 
 #sec2_1 {
 
     grid-area: sec2_1;
+    overflow: hidden;
 
-}
-
-#bild1_1 {
-
-    width: 100%;
-    height: auto;
 }
 
 #sec3_1 {
 
     grid-area: sec3_1;
-
-}
-
-#bild2_1 {
-
-    width: 100%;
-    height: auto;
+    overflow: hidden;
 
 }
 
@@ -268,25 +253,14 @@ footer {
 #sec6_1 {
 
     grid-area: sec6_1;
-
-}
-
-#bild3_1 {
-
-    width: 100%;
-    height: auto;
+    overflow: hidden;
 
 }
 
 #sec7_1 {
 
     grid-area: sec7_1;
-
-}
-
-#bild4_1 {
-
-    width: 100%;
+    overflow: hidden;
 
 }
 
@@ -305,13 +279,7 @@ footer {
 #sec10_1 {
 
     grid-area: sec10_1;
-
-}
-
-#bild5_1 {
-
-    width: 100%;
-    height: auto;
+    overflow: hidden;
 
 }
 
@@ -333,19 +301,33 @@ footer {
 
 }
 
+
+.section_class_2 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.section_class_text_2 {
+
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+
+
+}
+
 .text_2 {
 
     padding-bottom: 30px;
 
 }
 
-
 #sec1_2 {
 
     grid-area: sec1_2;
-    display: flex;
     align-items: center;
-    justify-content: center;
     padding-left: 200px;
     padding-right: 200px;
     background: gray;
@@ -355,19 +337,12 @@ footer {
 #sec1_2_2 {
 
     grid-area: sec1_2_2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 150px;
-    padding-right: 150px;
 
 }
 
 #sec2_2 {
 
     grid-area: sec2_2;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -391,24 +366,20 @@ footer {
 #sec3_2 {
 
     grid-area: sec3_2;
+    overflow: hidden;
 
 }
 
 #bild_map {
 
-    height: 100%;
-    width: 100%;  
+    height: auto;
+    width: auto;  
 
 }
 
 #sec4_2 {
 
     grid-area: sec4_2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 150px;
-    padding-right: 150px;
 
 }
 
@@ -424,9 +395,6 @@ footer {
 
 }
 
-
-
-
 /*sida 3*/
 
 
@@ -434,17 +402,80 @@ footer {
 /*telefon*/
 
 @media screen and (max-width: 800px) {
-    
-    header {
 
-        grid-template-areas: 
-        "logo meny"
-        ;
-    
+    p {
+
+        font-size: 90%;
+
     }
 
+    #meny {
+
+        justify-content: flex-end;
+
+    }
+    
+    #logga_sec {
+
+
+        padding-left: 10px;
+
+    }
+
+    #ul_header {
+        background: white;
+        flex-direction: column;
+        height: 400px;
+        position: absolute;
+        top: -400px;
+        z-index: 1;
+        width: auto;
+        box-shadow: 0px 1px 5px grey;
+
+    }
+    
+    #burger {
+        margin-right: 50px;
+        cursor: pointer;
+        
+    }
+
+    .links_visible {
+        transform: translateY(500px);
+    }
+    
+    .burger_line {
+        width: var(--burgerline_width);
+        height: var(--burgerline_height);
+        margin: var(--burgerline_margin);
+        background: gray;
+        border-radius: 20%;
+        transition: all 0.5s;
+    }
+
+    #ul_header a {
+        font-size: 1.25rem;
+    }
+    
+    #ul_header a:hover {
+        background: grey;
+        color: black;
+    }
+    
+    .burger_in_x_form #burger_line_2 {
+        opacity: 0;
+    }
+    
+    .burger_in_x_form #burger_line_1 {
+        transform: translateY(calc(var(--burgerline_height) + var(--burgerline_margin))) rotate(45deg);
+    }
+    
+    .burger_in_x_form #burger_line_3 {
+        transform: translateY(calc((-1)*(var(--burgerline_height) + var(--burgerline_margin)))) rotate(-45deg);
+    }
+    
     #body_1{
-        grid-template-rows: 100px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 100px;
+        grid-template-rows: 100px 700px 300px 500px 300px 500px 300px 600px 300px 500px 300px 100px;
         grid-template-areas: 
             "head head"
             "sec1_1 sec1_1"
@@ -462,28 +493,71 @@ footer {
         ;
     }
 
+    .bild_1 {
+
+        height: 100%;
+    }
+
     .section_class_text_1 {
 
         flex-direction: column;
-        padding: 150px;
         padding: 25px;
-        font-size: 0.75rem;
-
     
     }
 
-    #text_1{
+    #body_2 {
 
-        font-size: 0.75rem;
+        grid-template-rows: 100px 300px 600px 500px 300px 300px 500px 500px 100px;
+        grid-template-areas:
+        "head head" 
+        "sec1_2 sec1_2"
+        "sec1_2_2 sec1_2_2"
+        "sec2_2 sec2_2"
+        "sec4_2 sec4_2"
+        "sec3_2 sec3_2"
+        "sec5_2 sec5_2"
+        "sec6_2 sec6_2"
+        "foot foot"
+        ;
+    }
 
+
+    #sec1_2 {
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .section_class_text_2 {
+
+        padding-left: 25px;
+        padding-right: 25px;
 
     }
+
+    #sec2_2 {
+
+        background: gray;
+
+    }
+    
+    .arrow_bildspel {
+        width: 50px;
+        height: auto;
+        margin: 10px;
+    } 
+    
+    #bildspel_bilderna {
+        width: auto;
+        height: 300px;
+        border-radius: 30px;
+    }
+
 
     #p_footer {
 
         font-size: 1rem;
     
     }
-    
-
+   
 }

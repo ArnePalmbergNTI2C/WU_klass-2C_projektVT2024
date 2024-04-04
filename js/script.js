@@ -1,7 +1,20 @@
+// hamburgermeny
+const burger = document.getElementById('burger')
+const linkList = document.getElementById('ul_header')
+
+function toggleMenu() {
+    linkList.classList.toggle('links_visible')
+    burger.classList.toggle('burger_in_x_form')
+}
+
+burger.addEventListener('click', toggleMenu)
+
+//bildspel
+
 const arrowLeft = document.getElementById('arrow_left')
 const arrowRight = document.getElementById('arrow_right')
 
-var imgGalleryImgSources = ["img/bildspel/bildspel_1.jpg", "img/bildspel/bildspel_2.jpg", "img/bildspel/bildspel_3.jpg", "img/bildspel/bildspel_4.jpg", "img/bildspel/bildspel_5.jpg", "img/bildspel/bildspel_6.jpg"]
+var imgGalleryImgSources = ["img/bildspel/1..jpg", "img/bildspel/2..jpg", "img/bildspel/3..jpg", "img/bildspel/4..jpg", "img/bildspel/5..jpg"]
 var imgGalleryIndex = 0
 
 function newImageRight() {
@@ -18,15 +31,3 @@ function newImageLeft() {
 
 arrowLeft.addEventListener('click', newImageLeft)
 arrowRight.addEventListener('click', newImageRight)
-
-
-
-const burger = document.getElementById('burger')
-const linkList = document.getElementById('link_list')
-
-function toggleMenu() {
-    linkList.classList.toggle('links_visible')
-    burger.classList.toggle('burger_in_x_form')
-}
-
-burger.addEventListener('click', toggleMenu)
