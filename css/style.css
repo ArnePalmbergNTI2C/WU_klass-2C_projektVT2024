@@ -3,6 +3,12 @@
     padding: 0;
     margin:0;
     box-sizing: border-box;
+
+    --burgerline_width: 30px;
+    --burgerline_height: 6px;
+    --burgerline_margin: 5px;
+    
+    --background_color: lightseagreen;
 }
 
 /*taggar*/
@@ -86,6 +92,29 @@ header {
 
 }
 
+#link_list {
+    flex-direction: row;
+    height: 100px;
+    width: 100%;
+    top: 0px;
+    border-bottom: 2px solid grey;
+}
+
+.links_visible {
+    transform: translateY(0px);
+}
+
+#link_list a:hover {
+    background: var(--background_color);
+    color: rgb(255, 128, 0);
+}
+
+#link_list a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+
 
 #ul_header {
 
@@ -138,6 +167,7 @@ footer {
     display: grid;
     grid-template-rows:100px 600px 600px 600px 600px 600px 100px;
     grid-template-columns: 1fr 1fr;
+    width: auto;
     grid-template-areas:
     "head head" 
     "sec1_1 sec2_1"
@@ -206,9 +236,8 @@ footer {
 
 #bild1_1 {
 
-    height: 100%;
     width: 100%;
-
+    height: auto;
 }
 
 #sec3_1 {
@@ -219,8 +248,8 @@ footer {
 
 #bild2_1 {
 
-    height: 100%;
     width: 100%;
+    height: auto;
 
 }
 
@@ -244,8 +273,8 @@ footer {
 
 #bild3_1 {
 
-    height: 100%;
     width: 100%;
+    height: auto;
 
 }
 
@@ -257,7 +286,6 @@ footer {
 
 #bild4_1 {
 
-    height: 100%;
     width: 100%;
 
 }
@@ -282,8 +310,8 @@ footer {
 
 #bild5_1 {
 
-    height: 100%;
     width: 100%;
+    height: auto;
 
 }
 
@@ -416,22 +444,46 @@ footer {
     }
 
     #body_1{
-        grid-template-rows: 100px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 100px;
+        grid-template-rows: 100px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 100px;
         grid-template-areas: 
             "head head"
-            "sec1 sec1"
-            "sec2 sec2"
-            "sec4 sec4"
-            "sec3 sec3"
-            "sec5 sec5"
-            "sec6 sec6"
-            "sec8 sec8"
-            "sec7 sec7"
-            "sec9 sec9"
-            "sec10 sec10"
+            "sec1_1 sec1_1"
+            "sec2_1 sec2_1"
+            "sec4_1 sec4_1"
+            "sec3_1 sec3_1"
+            "sec5_1 sec5_1"
+            "sec6_1 sec6_1"
+            "sec8_1 sec8_1"
+            "sec7_1 sec7_1"
+            "sec9_1 sec9_1"
+            "sec10_1 sec10_1"
             "foot foot"
 
         ;
     }
+
+    .section_class_text_1 {
+
+        flex-direction: column;
+        padding: 150px;
+        padding: 25px;
+        font-size: 0.75rem;
+
+    
+    }
+
+    #text_1{
+
+        font-size: 0.75rem;
+
+
+    }
+
+    #p_footer {
+
+        font-size: 1rem;
+    
+    }
+    
 
 }

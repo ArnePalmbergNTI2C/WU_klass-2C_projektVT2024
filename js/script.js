@@ -18,3 +18,15 @@ function newImageLeft() {
 
 arrowLeft.addEventListener('click', newImageLeft)
 arrowRight.addEventListener('click', newImageRight)
+
+
+
+const burger = document.getElementById('burger')
+const linkList = document.getElementById('link_list')
+
+function toggleMenu() {
+    linkList.classList.toggle('links_visible')
+    burger.classList.toggle('burger_in_x_form')
+}
+
+burger.addEventListener('click', toggleMenu)
