@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 * {
 
     padding: 0;
     margin:0;
     box-sizing: border-box;
 
-    --font-family: "Montserrat", sans-serif;
+    --font-family: "Nunito Sans", sans-serif;
 
     --burgerline_width: 30px;
     --burgerline_height: 6px;
@@ -114,7 +114,7 @@ header {
     color: black;
     font-size: 1.5rem;
     letter-spacing: 0.05rem;
-    width: 200px;
+    width: 225px;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -205,7 +205,7 @@ footer {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 
 }
 
@@ -240,7 +240,7 @@ footer {
 
     padding-left: 10px;
     font-size: 1.3rem;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 
 }
 
@@ -368,6 +368,12 @@ footer {
 
 }
 
+#intro_text_2 {
+
+    font-size: 1.2rem;
+
+}
+
 #sec1_2_2 {
 
     grid-area: sec1_2_2;
@@ -431,7 +437,121 @@ footer {
 
 /*sida 3*/
 
+#body_3 {
 
+    display: grid;
+    grid-template-rows: 100px 300px 700px 700px 700px 700px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "head head" 
+    "sec1_3 sec1_3"
+    "sec2_3 sec3_3"
+    "sec4_3 sec5_3"
+    "sec6_3 sec7_3"
+    "sec8_3 sec9_3"
+    "foot foot"
+    ;
+
+}
+
+
+.section_class_3 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.section_class_text_3 {
+
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+
+
+}
+
+.text_3 {
+
+    padding-bottom: 30px;
+
+}
+
+.bild_3 {
+
+    height: auto;
+    width: auto;
+
+}
+
+#sec1_3 {
+
+    grid-area: sec1_3;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    background: gray;
+
+}
+
+#intro_text_3 {
+
+    font-size: 1.2rem;
+
+}
+
+#sec2_3 {
+
+    grid-area: sec2_3;
+    overflow: hidden;
+
+}
+
+#sec3_3 {
+
+    grid-area: sec3_3;
+
+}
+
+#sec4_3 {
+
+    grid-area: sec4_3;
+
+}
+
+#sec5_3 {
+
+    grid-area: sec5_3;
+    overflow: hidden;
+
+}
+
+#sec6_3 {
+
+    grid-area: sec6_3;
+    overflow: hidden;
+
+}
+
+#sec7_3 {
+
+    grid-area: sec7_3;
+
+}
+
+#sec8_3 {
+
+    grid-area: sec8_3;
+
+}
+
+#sec9_3 {
+
+    grid-area: sec9_3;
+    overflow: hidden;
+
+
+}
 
 /*telefon*/
 
@@ -465,6 +585,7 @@ footer {
         z-index: 1;
         width: auto;
         box-shadow: 0px 1px 5px grey;
+        transition: all 0.5s ease;
 
     }
     
@@ -509,7 +630,7 @@ footer {
     }
     
     #body_1{
-        grid-template-rows: 100px 700px 300px 500px 300px 500px 300px 600px 300px 500px 300px 100px;
+        grid-template-rows: 100px 700px 300px 400px 300px 500px 300px 600px 300px 500px 300px 100px;
         grid-template-areas: 
             "head head"
             "sec1_1 sec1_1"
@@ -541,7 +662,7 @@ footer {
 
     #body_2 {
 
-        grid-template-rows: 100px 300px 600px 500px 400px 300px 500px 500px 100px;
+        grid-template-rows: 100px 500px 600px 500px 400px 300px 500px 500px 100px;
         grid-template-areas:
         "head head" 
         "sec1_2 sec1_2"
@@ -594,6 +715,42 @@ footer {
 
     }
 
+    #body_3 {
+
+        grid-template-rows: 100px 350px 600px 500px 600px 500px 600px 500px 600px 500px 100px;
+        grid-template-areas:
+        "head head" 
+        "sec1_3 sec1_3"
+        "sec3_3 sec3_3"
+        "sec2_3 sec2_3"
+        "sec4_3 sec4_3"
+        "sec5_3 sec5_3"
+        "sec7_3 sec7_3"
+        "sec6_3 sec6_3"
+        "sec8_3 sec8_3"
+        "sec9_3 sec9_3"
+        "foot foot"
+        ;
+    }
+
+    
+    .bild_3 {
+
+        height: 100%;
+    }
+
+    #sec1_3 {
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .section_class_text_3 {
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
 
     #p_footer {
 
