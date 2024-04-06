@@ -565,7 +565,7 @@ footer {
 #body_4 {
 
     display: grid;
-    grid-template-rows: 100px 300px 600px 300px 600px 600px 100px;
+    grid-template-rows: 100px 300px 600px 300px 760px 500px 100px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "head head" 
@@ -643,7 +643,16 @@ footer {
 #sec4_4 {
 
     grid-area: sec4_4;
-    background: blue;
+    background: gray;
+    display: grid;
+    padding: 30px;
+    grid-template-rows: 350px 350px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "ett tvo tre fyra" 
+    "fem sex sju otta"
+    ;    
+
 
 }
 
@@ -658,7 +667,382 @@ footer {
 #sec6_4 {
 
     grid-area: sec6_4;
-    ba
+
+}
+
+#sec7_4 {
+
+    grid-area: ett;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+
+}
+
+#one {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec7_4:hover #one{
+
+    opacity: 0;
+
+}
+
+#sec7_4:hover #one_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#one_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+#sec8_4 {
+
+    grid-area: tvo;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+
+}
+
+#two {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec8_4:hover #two{
+
+    opacity: 0;
+
+}
+
+#sec8_4:hover #two_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#two_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+
+#sec9_4 {
+
+    grid-area: tre;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+
+}
+#three {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec9_4:hover #three{
+
+    opacity: 0;
+
+}
+
+#sec9_4:hover #three_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#three_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+
+#sec10_4 {
+
+    grid-area: fyra;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+
+}
+
+#four {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec10_4:hover #four{
+
+    opacity: 0;
+
+}
+
+#sec10_4:hover #four_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#four_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+#sec11_4 {
+
+    grid-area: fem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+
+}
+#five {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec11_4:hover #five{
+
+    opacity: 0;
+
+}
+
+#sec11_4:hover #five_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#five_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+#sec12_4 {
+
+    grid-area: sex;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+
+}
+
+#six {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec12_4:hover #six{
+
+    opacity: 0;
+
+}
+
+#sec12_4:hover #six_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#six_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+#sec13_4 {
+
+    grid-area: sju;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+}
+
+#seven {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec13_4:hover #seven{
+
+    opacity: 0;
+
+}
+
+#sec13_4:hover #seven_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#seven_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+#sec14_4 {
+
+    grid-area: otta;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+    margin: 10px;
+
+}
+
+#eight {
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+}
+
+#sec14_4:hover #eight{
+
+    opacity: 0;
+
+}
+
+#sec14_4:hover #eight_{
+
+    opacity: 1;
+    transition: all 0.7s ease;
+
+
+}
+
+#eight_ {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+
+}
+
+
+.person_tall {
+
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+
+}
+
+.person_wide {
+
+    width: auto;
+    height: 100%;
+    filter: grayscale(100%);
+
+}
+
+.sec_for_text_kontakter {
+
+    position: absolute;
+    color: white;
+    bottom: 0px;
+    
+
+}
+
+.p_card {
+
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 
 }
 
