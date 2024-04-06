@@ -45,6 +45,12 @@ a {
 
 }
 
+li {
+
+    font-family: var(--font-family);
+
+}
+
 /* header */
 
 header {
@@ -550,6 +556,109 @@ footer {
     grid-area: sec9_3;
     overflow: hidden;
 
+
+}
+
+/*sida 4*/
+
+
+#body_4 {
+
+    display: grid;
+    grid-template-rows: 100px 300px 600px 300px 600px 600px 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "head head" 
+    "sec1_4 sec1_4"
+    "sec2_4 sec3_4"
+    "sec_mid_4 sec_mid_4"
+    "sec4_4 sec4_4"
+    "sec5_4 sec6_4"
+    "foot foot"
+    ;
+
+}
+
+
+.section_class_4 {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.section_class_text_4 {
+
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 150px;
+
+
+}
+
+.text_4 {
+
+    padding-bottom: 30px;
+
+}
+
+#sec1_4 {
+
+    grid-area: sec1_4;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    background: gray;
+
+}
+
+.intro_text_4 {
+
+    font-size: 1.2rem;
+
+}
+
+#sec2_4 {
+
+    grid-area: sec2_4;
+
+}
+
+#sec3_4 {
+
+    grid-area: sec3_4;
+
+}
+
+#sec_mid_4 {
+
+    grid-area: sec_mid_4;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    background: gray;
+
+}
+
+#sec4_4 {
+
+    grid-area: sec4_4;
+    background: blue;
+
+}
+
+#sec5_4 {
+
+    grid-area: sec5_4;
+    background: yellow;
+
+
+}
+
+#sec6_4 {
+
+    grid-area: sec6_4;
+    ba
 
 }
 
