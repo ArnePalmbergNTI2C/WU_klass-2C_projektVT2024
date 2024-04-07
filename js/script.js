@@ -31,3 +31,17 @@ function newImageLeft() {
 
 arrowLeft.addEventListener('click', newImageLeft)
 arrowRight.addEventListener('click', newImageRight)
+
+// knapp
+
+const knapp = document.getElementById('knapp')
+var index = 0
+var img = ["img/person_1.jpg", "img/person_2.jpg", "img/person_3.jpg", "img/person_4.jpg", "img/person_5.jpg", "img/person_6.jpg", "img/person_7.jpg", "img/person_8.jpg"]
+
+function randomo() {
+    index = Math.floor(Math.random() * 8)
+    document.getElementById('random_bilder').src = img[index]
+}
+
+knapp.addEventListener('click', randomo)
+

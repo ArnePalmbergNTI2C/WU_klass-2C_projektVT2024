@@ -51,6 +51,12 @@ li {
 
 }
 
+ul {
+
+    font-family: var(--font-family);
+
+}
+
 /* header */
 
 header {
@@ -335,7 +341,7 @@ footer {
     "sec1_2 sec1_2"
     "sec1_2_2 sec2_2"
     "sec3_2 sec4_2"
-    "sec5_2 sec6_2"
+    "sec5_2 sec5_2"
     "foot foot"
     ;
 
@@ -401,12 +407,14 @@ footer {
 #bildspel_bilderna {
     width: auto;
     height: 600px;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 #bildspel_inre_sec {
     display: flex;
     align-items: center;
+    cursor: pointer;
+
 }
 
 #sec3_2 {
@@ -432,14 +440,38 @@ footer {
 #sec5_2 {
 
     grid-area: sec5_2;
+    align-items: center;
 
 }
 
 #sec6_2 {
 
-    grid-area: sec6_2;
+    display: flex;
+}
+
+#banrekord_text {
+
+    padding-left: 200px;
+    padding-right: 200px;
 
 }
+
+.article_banrekord {
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.ul_banrekord {
+
+    font-style: italic;
+
+}
+
 
 /*sida 3*/
 
@@ -565,7 +597,7 @@ footer {
 #body_4 {
 
     display: grid;
-    grid-template-rows: 100px 300px 600px 300px 760px 500px 100px;
+    grid-template-rows: 100px 300px 600px 300px 760px 700px 100px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "head head" 
@@ -627,6 +659,7 @@ footer {
 #sec3_4 {
 
     grid-area: sec3_4;
+    padding-left: 275px;
 
 }
 
@@ -659,8 +692,15 @@ footer {
 #sec5_4 {
 
     grid-area: sec5_4;
-    background: yellow;
 
+}
+
+#knapp {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
 
 }
 
@@ -670,13 +710,29 @@ footer {
 
 }
 
+#inre_sec6_4 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#random_bilder {
+
+    height: 70%;
+    width: auto;
+    border-radius: 20px;
+
+}
+
 #sec7_4 {
 
     grid-area: ett;
     overflow: hidden;
     display: flex;
     justify-content: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 
@@ -719,7 +775,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 
@@ -763,7 +819,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 
@@ -806,7 +862,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 
@@ -849,7 +905,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 
@@ -891,7 +947,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 
@@ -934,7 +990,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 }
@@ -976,7 +1032,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
     margin: 10px;
 
@@ -1041,8 +1097,6 @@ footer {
 .p_card {
 
     font-size: 2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 
 }
 
@@ -1084,7 +1138,6 @@ footer {
     
     #burger {
         margin-right: 50px;
-        cursor: pointer;
         
     }
 
@@ -1155,7 +1208,7 @@ footer {
 
     #body_2 {
 
-        grid-template-rows: 100px 500px 600px 500px 400px 300px 500px 500px 100px;
+        grid-template-rows: 100px 450px 600px 500px 400px 350px 800px 100px;
         grid-template-areas:
         "head head" 
         "sec1_2 sec1_2"
@@ -1164,7 +1217,6 @@ footer {
         "sec4_2 sec4_2"
         "sec3_2 sec3_2"
         "sec5_2 sec5_2"
-        "sec6_2 sec6_2"
         "foot foot"
         ;
     }
@@ -1190,27 +1242,58 @@ footer {
     }
     
     .arrow_bildspel {
-        width: 50px;
+        width: 70px;
         height: auto;
-        margin: 10px;
+        margin: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+
     } 
     
     #bildspel_bilderna {
         width: auto;
-        height: 300px;
-        border-radius: 30px;
+        height: 250px;
+        border-radius: 20px;
     }
 
-    #bildmap {
+    #bild_map {
 
-        width: auto;
+        height: 100%;
+    
+    }
 
+    #sec5_2 {
 
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    #sec6_2 {
+    
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    #banrekord_text {
+    
+        padding-left: 0px;
+        padding-right: 0px;
+    
+    }
+    
+    .article_banrekord {
+    
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
     }
 
     #body_3 {
 
-        grid-template-rows: 100px 350px 600px 500px 600px 500px 600px 500px 600px 500px 100px;
+        grid-template-rows: 100px 350px 600px 500px 650px 500px 600px 500px 500px 500px 100px;
         grid-template-areas:
         "head head" 
         "sec1_3 sec1_3"
@@ -1243,6 +1326,93 @@ footer {
         padding-left: 25px;
         padding-right: 25px;
 
+    }
+
+    #body_4 {
+
+        grid-template-rows: 100px 350px 600px 500px 700px 2835px 350px 600px 100px;
+        grid-template-areas:
+        "head head" 
+        "sec1_4 sec1_4"
+        "sec2_4 sec2_4"
+        "sec3_4 sec3_4"
+        "sec_mid_4 sec_mid_4"
+        "sec4_4 sec4_4"
+        "sec5_4 sec5_4"
+        "sec6_4 sec6_4"
+        "foot foot"
+        ;
+    }
+
+    #sec1_4 {
+
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #sec3_4 {
+
+        padding-left: 20%;
+        background: gray;
+    
+    }
+
+    #sec_mid_4 {
+
+        padding-left: 25px;
+        padding-right: 25px;
+        background: none;
+    }
+
+    #sec4_4 {
+
+        grid-area: sec4_4;
+        background: gray;
+        display: grid;
+        padding: 15px;
+        grid-template-rows: 350px 350px 350px 350px 350px 350px 350px 350px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "ett"
+        "tvo"
+        "tre"
+        "fyra" 
+        "fem" 
+        "sex" 
+        "sju" 
+        "otta"
+        ;    
+    
+    
+    }
+
+    #random_bilder {
+
+
+        width: 100%;
+        height: auto;
+    
+    }
+
+    .section_class_text_4 {
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+    #sec6_4 {
+
+        background: gray;
+    
+    }
+
+    #inre_sec6_4 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
     }
 
     #p_footer {
